@@ -1,0 +1,17 @@
+//
+//  CopyMe_Prefix.pch
+//  CopyMe
+//
+//  Created by Keen on 2017/11/1.
+//  Copyright © 2017年 Keen. All rights reserved.
+//
+
+#ifndef CopyMe_Prefix_pch
+#define CopyMe_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Masonry.h"
+
+#endif /* CopyMe_Prefix_pch */
