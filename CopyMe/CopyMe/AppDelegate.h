@@ -12,6 +12,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (AppDelegate *)instance;
+
+- (void)userDidLogout;
+- (void)userDidLogin;
 
 @end
 

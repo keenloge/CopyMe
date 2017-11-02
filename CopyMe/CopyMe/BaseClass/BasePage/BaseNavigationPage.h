@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseNavigationPage.h
 //  CopyMe
 //
 //  Created by Keen on 2017/11/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface BaseNavigationPage : UINavigationController
 
 @end
-

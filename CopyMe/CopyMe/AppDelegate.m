@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseNavigationPage.h"
+#import "HomeTabBarPage.h"
+#import "AuthPreLoginPage.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +17,15 @@
 
 @implementation AppDelegate
 
++ (AppDelegate *)instance {
+    return (AppDelegate *)[[UIApplication sharedApplication] delegate];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self userDidLogout];
+    
     return YES;
 }
 
@@ -47,5 +56,28 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - 登录/登出
+
+- (void)userDidLogout {
+    AuthPreLoginPage *con = [AuthPreLoginPage new];
+    BaseNavigationPage *navCon = [[BaseNavigationPage alloc] initWithRootViewController:con];
+    self.window.rootViewController = navCon;
+    [self.window makeKeyAndVisible];
+}
+
+- (void)userDidLogin {
+    HomeTabBarPage *con = [HomeTabBarPage new];
+    self.window.rootViewController = con;
+    [self.window makeKeyAndVisible];
+}
+
+#pragma mark - Getter
+
+- (UIWindow *)window {
+    if (!_window) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    }
+    return _window;
+}
 
 @end
