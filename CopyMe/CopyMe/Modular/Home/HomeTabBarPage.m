@@ -7,6 +7,10 @@
 //
 
 #import "HomeTabBarPage.h"
+#import "BaseNavigationPage.h"
+#import "HomeViewPage.h"
+#import "HomeWorkPage.h"
+#import "HomeMinePage.h"
 
 @interface HomeTabBarPage ()
 
@@ -17,6 +21,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSArray *classArray = @[[HomeViewPage class],
+                            [HomeWorkPage class],
+                            [HomeMinePage class]];
+    
+    UIFont *font = [UIFont systemFontOfSize:10];
+    
+    NSMutableArray *pageArray = [NSMutableArray arrayWithCapacity:3];
+    [classArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        Class class = obj;
+        BaseNavigationPage *navCon = [[BaseNavigationPage alloc] initWithRootViewController:[class new]];
+        [pageArray addObject:navCon];
+        
+        [navCon.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                         kColorBlue, NSForegroundColorAttributeName,
+                                         font, NSFontAttributeName,
+                                         nil] forState:UIControlStateSelected];
+        [navCon.tabBarItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                         kColorBlack, NSForegroundColorAttributeName,
+                                         font, NSFontAttributeName,
+                                         nil] forState:UIControlStateNormal];
+    }];
+    
+    [self setViewControllers:pageArray];
 }
 
 - (void)didReceiveMemoryWarning {

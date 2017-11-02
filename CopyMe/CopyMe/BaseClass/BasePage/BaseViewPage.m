@@ -15,6 +15,17 @@
 
 @implementation BaseViewPage
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self baseInitBehind];
+    }
+    return self;
+}
+
+- (void)baseInitBehind {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 

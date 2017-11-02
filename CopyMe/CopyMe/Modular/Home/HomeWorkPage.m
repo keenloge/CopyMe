@@ -14,6 +14,12 @@
 
 @implementation HomeWorkPage
 
+- (void)baseInitBehind {
+    self.title = @"账务台";
+    self.tabBarItem.image = [UIImage imageNamed:@"home_tab_work_n"];
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_tab_work_d"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

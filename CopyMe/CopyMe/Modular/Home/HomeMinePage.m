@@ -14,6 +14,12 @@
 
 @implementation HomeMinePage
 
+- (void)baseInitBehind {
+    self.title = @"我";
+    self.tabBarItem.image = [UIImage imageNamed:@"home_tab_mine_n"];
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"home_tab_mine_d"];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
