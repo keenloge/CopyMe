@@ -10,10 +10,13 @@
 		113D59211FAABF27008B10D3 /* NSString+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D59201FAABF27008B10D3 /* NSString+Valid.m */; };
 		113D59241FAAC848008B10D3 /* NSTimer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D59231FAAC848008B10D3 /* NSTimer+Block.m */; };
 		113D592B1FAAEAA1008B10D3 /* BaseNavControlPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 113D592A1FAAEAA1008B10D3 /* BaseNavControlPage.m */; };
+		11527BA11FAB11A9004020D9 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11527BA01FAB11A9004020D9 /* DBManager.m */; };
 		118A191A1FA99E4500741B52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 118A19191FA99E4500741B52 /* AppDelegate.m */; };
 		118A19221FA99E4500741B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118A19211FA99E4500741B52 /* Assets.xcassets */; };
 		118A19251FA99E4500741B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118A19231FA99E4500741B52 /* LaunchScreen.storyboard */; };
 		118A19281FA99E4500741B52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 118A19271FA99E4500741B52 /* main.m */; };
+		11B34E111FAC392300F3C37C /* DBShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B34E101FAC392300F3C37C /* DBShareManager.m */; };
+		11B34E141FAC394700F3C37C /* DBUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B34E131FAC394700F3C37C /* DBUserManager.m */; };
 		11FBEB0B1FA9A61B00EC3DD7 /* BaseViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBEB0A1FA9A61B00EC3DD7 /* BaseViewPage.m */; };
 		11FBEB141FA9A67D00EC3DD7 /* BaseListPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBEB131FA9A67D00EC3DD7 /* BaseListPage.m */; };
 		11FBEB181FA9A80B00EC3DD7 /* HomeViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FBEB171FA9A80B00EC3DD7 /* HomeViewPage.m */; };
@@ -37,6 +40,8 @@
 		113D59231FAAC848008B10D3 /* NSTimer+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Block.m"; sourceTree = "<group>"; };
 		113D59291FAAEAA1008B10D3 /* BaseNavControlPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavControlPage.h; sourceTree = "<group>"; };
 		113D592A1FAAEAA1008B10D3 /* BaseNavControlPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavControlPage.m; sourceTree = "<group>"; };
+		11527B9F1FAB11A9004020D9 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		11527BA01FAB11A9004020D9 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		118A19151FA99E4500741B52 /* CopyMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118A19181FA99E4500741B52 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		118A19191FA99E4500741B52 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +50,10 @@
 		118A19261FA99E4500741B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118A19271FA99E4500741B52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		118A192E1FA99F1500741B52 /* CopyMe_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyMe_Prefix.pch; sourceTree = "<group>"; };
+		11B34E0F1FAC392300F3C37C /* DBShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBShareManager.h; sourceTree = "<group>"; };
+		11B34E101FAC392300F3C37C /* DBShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBShareManager.m; sourceTree = "<group>"; };
+		11B34E121FAC394700F3C37C /* DBUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUserManager.h; sourceTree = "<group>"; };
+		11B34E131FAC394700F3C37C /* DBUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUserManager.m; sourceTree = "<group>"; };
 		11FBEB091FA9A61B00EC3DD7 /* BaseViewPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewPage.h; sourceTree = "<group>"; };
 		11FBEB0A1FA9A61B00EC3DD7 /* BaseViewPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewPage.m; sourceTree = "<group>"; };
 		11FBEB121FA9A67D00EC3DD7 /* BaseListPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseListPage.h; sourceTree = "<group>"; };
@@ -210,6 +219,12 @@
 			children = (
 				11FBEB341FA9AC9800EC3DD7 /* ColorHelper.h */,
 				11FBEB351FA9ACF700EC3DD7 /* Declare.h */,
+				11527B9F1FAB11A9004020D9 /* DBManager.h */,
+				11527BA01FAB11A9004020D9 /* DBManager.m */,
+				11B34E0F1FAC392300F3C37C /* DBShareManager.h */,
+				11B34E101FAC392300F3C37C /* DBShareManager.m */,
+				11B34E121FAC394700F3C37C /* DBUserManager.h */,
+				11B34E131FAC394700F3C37C /* DBUserManager.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -382,13 +397,16 @@
 				11FBEB2A1FA9AAD000EC3DD7 /* BaseNavigationPage.m in Sources */,
 				11FBEB391FA9B61800EC3DD7 /* UIImage+Cache.m in Sources */,
 				113D592B1FAAEAA1008B10D3 /* BaseNavControlPage.m in Sources */,
+				11527BA11FAB11A9004020D9 /* DBManager.m in Sources */,
 				11FBEB1B1FA9A86000EC3DD7 /* HomeMinePage.m in Sources */,
 				11FBEB211FA9A90600EC3DD7 /* AuthLoginPage.m in Sources */,
 				118A19281FA99E4500741B52 /* main.m in Sources */,
 				11FBEB141FA9A67D00EC3DD7 /* BaseListPage.m in Sources */,
 				11FBEB321FA9AC0E00EC3DD7 /* BaseTableViewCell.m in Sources */,
 				11FBEB241FA9A91800EC3DD7 /* AuthPreLoginPage.m in Sources */,
+				11B34E111FAC392300F3C37C /* DBShareManager.m in Sources */,
 				118A191A1FA99E4500741B52 /* AppDelegate.m in Sources */,
+				11B34E141FAC394700F3C37C /* DBUserManager.m in Sources */,
 				11FBEB2F1FA9ABF600EC3DD7 /* BaseButton.m in Sources */,
 				113D59211FAABF27008B10D3 /* NSString+Valid.m in Sources */,
 				11FBEB1E1FA9A8F200EC3DD7 /* HomeWorkPage.m in Sources */,
